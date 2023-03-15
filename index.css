@@ -1,0 +1,217 @@
+:root {
+  --dark: #05152e;
+  --darker: #1f2937;
+  --darkest: #001e3c;
+  --grey: #6b7280;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+  --light: #eee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: var(--dark);
+
+  color: var(--light);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+header h1 {
+  margin-left: 20px;
+}
+
+header nav {
+  margin-right: 20px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: var(--light);
+
+  text-decoration: none;
+
+  padding: 10px 20px;
+}
+
+header nav ul li a:hover {
+  background-color: var(--purple);
+}
+
+main {
+  padding: 20px;
+}
+
+.quiz-container {
+  max-width: 800px;
+
+  margin: auto;
+
+  border: 2px solid var(--dark);
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px var(--grey);
+}
+
+.question {
+  padding: 20px;
+
+  background-color: var(--darker);
+
+  color: var(--light);
+}
+
+.question p {
+  font-size: 24px;
+
+  font-weight: 500;
+}
+
+.question img {
+  max-width: 100%;
+
+  height: auto;
+
+  display: block;
+
+  margin-top: 10px;
+}
+
+.answer {
+  padding: 20px;
+}
+
+.answer input {
+  width: 100%;
+
+  height: 40px;
+
+  border: 2px solid var(--dark);
+
+  border-radius: 5px;
+
+  font-size: 18px;
+
+  padding-left: 10px;
+
+  outline: none;
+}
+
+.answer input:focus {
+  border-color: var(--purple);
+}
+
+.answer .choice-container {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 10px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.answer .choice-container:hover {
+  transform: scale(1.05);
+}
+
+.answer .choice-prefix {
+  width: 50px;
+
+  height: 50px;
+
+  border: 2px solid var(--dark);
+
+  border-radius: 50%;
+
+  font-size: 18px;
+
+  font-weight: 500;
+
+  text-align: center;
+
+  line-height: 50px;
+
+  color: var(--dark);
+}
+
+.answer .choice-text {
+  flex: 1;
+
+  margin-left: 10px;
+
+  font-size: 18px;
+}
+
+.answer button {
+  width: 100%;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: var(--purple);
+
+  color: var(--light);
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+}
+
+.answer button:hover {
+  background-color: var(--pink);
+}
+
+.feedback {
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.feedback p {
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+.feedback #score {
+  color: var(--dark);
+}
+
+.feedback #correct-incorrect {
+  color: var(--purple);
+}

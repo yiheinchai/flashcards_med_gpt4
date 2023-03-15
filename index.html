@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Medicine Study App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Medicine Study App</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Quiz container -->
+      <div class="quiz-container">
+        <!-- Question -->
+        <div class="question">
+          <!-- Question text -->
+          <p id="question-text"></p>
+
+          <!-- Question image (optional) -->
+          <!-- Uncomment this line if you want to show an image
+for some questions -->
+          <!--
+<img id="question-image" src="" alt="">
+-->
+        </div>
+
+        <!-- Answer -->
+        <div class="answer">
+          <!-- Answer input -->
+          <!-- Uncomment this line if you want to let
+the user type their answer instead of choosing from multiple choices -->
+
+          <input
+            id="answer-input"
+            type="text"
+            placeholder="Type your answer here"
+          />
+
+          <!-- Answer choices -->
+          <!-- Uncomment these lines if you want to show multiple choices for some questions -->
+
+          <div class="choice-container">
+            <p class="choice-prefix">A</p>
+            <p class="choice-text" data-number="A"></p>
+          </div>
+
+          <div class="choice-container">
+            <p class="choice-prefix">B</p>
+            <p class="choice-text" data-number="B"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">C</p>
+            <p class="choice-text" data-number="C"></p>
+          </div>
+          <div class="choice-container">
+            <p class="choice-prefix">D</p>
+            <p class="choice-text" data-number="D"></p>
+          </div>
+
+          <!-- Submit button -->
+          <button id="submit-btn">Submit</button>
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback">
+          <!-- Score -->
+          <p id="score">Score: 0</p>
+
+          <!-- Correct or incorrect message -->
+          <p id="correct-incorrect"></p>
+
+          <!-- Explanation (optional) -->
+          <!-- Uncomment this line if you want to show an explanation for each answer -->
+
+          <p id="explanation"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Medicine Study App &copy; 2023. All rights reserved.</p>
+      <p>This app is created by Bing using html and javascript.</p>
+      <p>
+        This app is based on some of the examples found in the web search
+        results.
+      </p>
+    </footer>
+
+    <!-- Link to javascript file -->
+    <script src="index.js"></script>
+  </body>
+</html>
